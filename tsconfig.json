@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
     /* Basic Options */
-    "module": "es2015",
+    "module": "commonjs",
     "moduleResolution": "node",
     "newLine": "LF",
-    "rootDir": "./",
     "outDir": "./lib/",
-    "target": "es5",  
+    "target": "es5",
     "sourceMap": true,
     "declaration": true,
     "jsx": "preserve",
