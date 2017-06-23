@@ -57,7 +57,7 @@ console.log(array); // => [0, 1, 2]
     - e.g.) `update`, `delete`, `merge`...
 - Each method depended on other method
 
-## Priority Art
+## Related
 
 - [Pure javascript immutable arrays](https://vincent.billey.me/pure-javascript-immutable-array/ "Pure javascript immutable arrays")
 - [georapbox/immutable-arrays: Immutable versions of normally mutable array methods](https://github.com/georapbox/immutable-arrays "georapbox/immutable-arrays: Immutable versions of normally mutable array methods")
