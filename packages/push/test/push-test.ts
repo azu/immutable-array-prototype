@@ -14,6 +14,12 @@ describe("push", () => {
         const resultArray = push(originalArray, ...addingArray);
         assert.deepStrictEqual(resultArray, ["a", "b", "c", "d", "e", "f", "g"]);
     });
+    it("can push an array", () => {
+        const originalArray = ["a", "b", "c", "d", "e"];
+        const addingArray = ["f", "g"];
+        const resultArray = push(originalArray, addingArray);
+        assert.deepStrictEqual(resultArray, ["a", "b", "c", "d", "e", ["f", "g"]]);
+    });
     it("should return empty array when adding empty element to empty array", () => {
         const originalArray = [];
         const resultArray = push(originalArray);
