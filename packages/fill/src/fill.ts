@@ -12,7 +12,7 @@ export function fill<T>(array: Array<T>, value: T, start: number = 0, end: numbe
 
     // Steps 1-2.
     if (array == null) {
-        throw new TypeError("this is null or not defined");
+        throw new TypeError("array is null or undefined");
     }
 
     // Steps 3-5.

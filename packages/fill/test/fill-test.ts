@@ -3,6 +3,11 @@ import { fill } from "../src/fill";
 import * as assert from "assert";
 
 describe("fill", () => {
+    it("throw error when pass undefined as array", () => {
+        assert.throws(() => {
+            fill(undefined);
+        }, "array is null or undefined");
+    });
     it("can fill element to empty array", () => {
         const originalArray = [];
         const resultArray = fill(originalArray, "x");
