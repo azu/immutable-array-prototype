@@ -133,35 +133,35 @@ See [benchmark](packages/benchmark).
     Native `Array.prototype`          |    @immutable-array
     > node src/array.js |                  > immutable-array.js
                                       |
-    # pop 200000 times               <<<   # pop 200000 times
-    ok ~243 ms (0 s + 242726054 ns)  <<<   ok ~288 ms (0 s + 287995642 ns)
-                                      |
-    # push 200000 times              <<<   # push 200000 times
-    ok ~43 ms (0 s + 42891286 ns)    <<<   ok ~151 ms (0 s + 151449835 ns)
-                                      |
+    # pop 200000 times               >>>   # pop 200000 times
+    ok ~330 ms (0 s + 330397151 ns)  >>>   ok ~267 ms (0 s + 267348617 ns)
+                                  |
+    # push 200000 times              >>>   # push 200000 times
+    ok ~169 ms (0 s + 168738061 ns)  >>>   ok ~141 ms (0 s + 140502324 ns)
+                                  |
     # shift 200000 times             <<<   # shift 200000 times
-    ok ~229 ms (0 s + 228985933 ns)  <<<   ok ~278 ms (0 s + 278376069 ns)
-                                      |
+    ok ~296 ms (0 s + 295892983 ns)  <<<   ok ~419 ms (0 s + 418852725 ns)
+                                  |
     # unshift 200000 times           <<<   # unshift 200000 times
-    ok ~51 ms (0 s + 50645359 ns)    <<<   ok ~110 ms (0 s + 109918035 ns)
-                                      |
-    # sort 2000 times                ===   # sort 2000 times
-    ok ~563 ms (0 s + 562931038 ns)  ===   ok ~560 ms (0 s + 559704603 ns)
-                                      |
+    ok ~51 ms (0 s + 50817590 ns)    <<<   ok ~191 ms (0 s + 191329502 ns)
+                                  |
+    # sort 2000 times                >>>   # sort 2000 times
+    ok ~933 ms (0 s + 932551400 ns)  >>>   ok ~611 ms (0 s + 610748601 ns)
+                                  |
     # reverse 200000 times           >>>   # reverse 200000 times
-    ok ~511 ms (0 s + 511468366 ns)  >>>   ok ~439 ms (0 s + 438853725 ns)
-                                      |
+    ok ~555 ms (0 s + 554921645 ns)  >>>   ok ~455 ms (0 s + 455068191 ns)
+                                  |
     # fill 200000 times              >>>   # fill 200000 times
-    ok ~737 ms (0 s + 737258288 ns)  >>>   ok ~691 ms (0 s + 691079207 ns)
-                                      |
+    ok ~782 ms (0 s + 782159758 ns)  >>>   ok ~699 ms (0 s + 698677543 ns)
+                                  |
     # splice 200000 times            <<<   # splice 200000 times
-    ok ~273 ms (0 s + 273138691 ns)  <<<   ok ~624 ms (0 s + 623533828 ns)
-                                      |
+    ok ~287 ms (0 s + 286547242 ns)  <<<   ok ~391 ms (0 s + 391294720 ns)
+                                  |
     # copyWithin 200000 times        <<<   # copyWithin 200000 times
-    ok ~240 ms (0 s + 240226993 ns)  <<<   ok ~303 ms (0 s + 303090728 ns)
-                                      |
-    all benchmarks completed         <<<   all benchmarks completed
-    ok ~2.89 s (2 s + 890272008 ns)  <<<   ok ~3.44 s (3 s + 444001672 ns)
+    ok ~237 ms (0 s + 236837575 ns)  <<<   ok ~275 ms (0 s + 275267401 ns)
+                                  |
+    all benchmarks completed         >>>   all benchmarks completed
+    ok ~3.64 s (3 s + 638863405 ns)  >>>   ok ~3.45 s (3 s + 449089624 ns)
 
 ## Support Policy
 
