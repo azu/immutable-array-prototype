@@ -13,8 +13,7 @@
     "bootstrap": "lerna boostrap",
     "prepare": "npm run bootstrap",
     "test": "jest",
-    "build": "lerna run build",
-    "prepublish": "npm run --if-present build"
+    "build": "lerna run build"
   },
   "lint-staged": {
     "**/*.{ts,tsx}": [
