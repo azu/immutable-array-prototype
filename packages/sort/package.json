@@ -1,0 +1,39 @@
+{
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "name": "@immutable-array/sort",
+  "version": "1.0.0",
+  "description": "Immutable Array.prototype.sort.",
+  "main": "lib/sort.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production tsc -p .",
+    "watch": "tsc -p . --watch",
+    "prepublish": "npm run --if-present build"
+  },
+  "keywords": [
+    "array",
+    "immutable"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/immutable-array-prototype.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azu/immutable-array-prototype/issues"
+  },
+  "homepage": "https://github.com/azu/immutable-array-prototype/tree/master/packages/sort/",
+  "devDependencies": {
+    "@types/node": "^8.0.2",
+    "cross-env": "^5.0.1",
+    "typescript": "^2.3.4"
+  }
+}
