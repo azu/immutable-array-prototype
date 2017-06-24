@@ -124,7 +124,7 @@ Benchmark that is native `Array.prototype` methods vs. `@immutable-array`
 
 See [benchmark](packages/benchmark).
     
-    NANOBENCH version 2               |    NANOBENCH version 2
+    Native `Array.prototype`          |    @immutable-array
     > node src/array.js |                  > immutable-array.js
                                       |
     # pop 200000 times               <<<   # pop 200000 times
