@@ -20,6 +20,9 @@
     "watch": "tsc -p . --watch",
     "prepublish": "npm run --if-present build"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "array",
     "immutable",
