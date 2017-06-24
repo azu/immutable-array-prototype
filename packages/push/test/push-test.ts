@@ -20,6 +20,10 @@ describe("push", () => {
         const resultArray = push(originalArray, addingArray);
         assert.deepStrictEqual(resultArray, ["a", "b", "c", "d", "e", ["f", "g"]]);
     });
+    it("should be idempotent - x() === x()", () => {
+        const originalArray = ["a", "b", "c", "d", "e"];
+        assert.deepStrictEqual(push(originalArray, 1), push(originalArray, 1));
+    });
     it("should return empty array when adding empty element to empty array", () => {
         const originalArray = [];
         const resultArray = push(originalArray);

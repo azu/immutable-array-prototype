@@ -18,4 +18,8 @@ describe("pop", () => {
         const resultArray = pop(originalArray);
         assert.ok(originalArray !== resultArray);
     });
+    it("should be idempotent - x() === x()", () => {
+        const originalArray = ["a", "b", "c", "d", "e"];
+        assert.deepStrictEqual(pop(originalArray), pop(originalArray));
+    });
 });
