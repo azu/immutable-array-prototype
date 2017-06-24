@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@immutable-array/shift",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Immutable Array.prototype.shift.",
   "main": "lib/shift.js",
   "types": "lib/shift.d.ts",

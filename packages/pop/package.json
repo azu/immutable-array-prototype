@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@immutable-array/pop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Immutable Array.prototype.pop.",
   "main": "lib/pop.js",
   "types": "lib/pop.d.ts",
