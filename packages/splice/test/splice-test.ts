@@ -54,6 +54,11 @@ describe("splice", () => {
             const resultArray = splice(originalArray, 1, 3);
             assert.deepStrictEqual(resultArray, ["a", "e"]);
         });
+        it("should not remove elements from array, when no arguments", () => {
+            const originalArray = ["a", "b", "c", "d", "e"];
+            const resultArray = splice(originalArray);
+            assert.deepStrictEqual(resultArray, ["a", "b", "c", "d", "e"]);
+        });
     });
     describe("insert pattern", () => {
         it('should return array that first element replaced with "x"', () => {
