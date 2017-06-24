@@ -11,6 +11,7 @@
     "postcommit": "git reset",
     "prettier": "prettier \"packages/**/{src,test}/*.{ts,tsx}\" --write --print-width 100 --tab-width 4",
     "bootstrap": "lerna boostrap",
+    "prepare": "npm run bootstrap",
     "test": "jest",
     "build": "lerna run build",
     "prepublish": "npm run --if-present build"
