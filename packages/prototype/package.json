@@ -1,0 +1,54 @@
+{
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "name": "@immutable-array/prototype",
+  "version": "1.0.0",
+  "description": "Collection of immutable Array.prototype methods.",
+  "main": "lib/prototype.js",
+  "types": "lib/prototype.d.ts",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production tsc -p .",
+    "watch": "tsc -p . --watch",
+    "prepublish": "npm run --if-present build"
+  },
+  "keywords": [
+    "array",
+    "immutable",
+    "collection",
+    "util",
+    "structure"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/immutable-array-prototype.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azu/immutable-array-prototype/issues"
+  },
+  "homepage": "https://github.com/azu/immutable-array-prototype/tree/master/packages/prototype/",
+  "dependencies": {
+    "@immutable-array/sort": "^1.0.0",
+    "@immutable-array/unshift": "^1.0.0",
+    "@immutable-array/push": "^1.0.0",
+    "@immutable-array/fill": "^1.0.0",
+    "@immutable-array/splice": "^1.0.0",
+    "@immutable-array/pop": "^1.0.0",
+    "@immutable-array/reverse": "^1.0.0",
+    "@immutable-array/copy-within": "^1.0.0",
+    "@immutable-array/shift": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.2",
+    "cross-env": "^5.0.1",
+    "typescript": "^2.3.4"
+  }
+}

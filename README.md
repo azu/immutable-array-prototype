@@ -10,6 +10,7 @@ Immutable Array prototype methods.
 ## Why?
 
 ECMAScript `Array` has some mutable methods.
+
 This library provide immutable version of each methods.
 
 ### Mutable method on `Array.prototype`
@@ -33,13 +34,88 @@ Install with [npm](https://www.npmjs.com/):
 
     npm install @immutable-array/prototype
 
+Per method packages:
+
+    npm install @immutable-array/pop
+    npm install @immutable-array/push
+    npm install @immutable-array/shift
+    npm install @immutable-array/unshift
+    npm install @immutable-array/sort
+    npm install @immutable-array/reverse
+    npm install @immutable-array/fill
+    npm install @immutable-array/splice
+    npm install @immutable-array/copy-within
+
+See more details on each [package's README](./packages/).
+
 ## Usage
 
+`@immutable-array/prototype` is a collection of immutable `Array.prototype` methods.
+
+Basically, the usage of these method is same with mutable version.
+
 ```js
-import { push } from "@immutable-array/prototype"
-const array = [0, 1, 2];
-push(array, 3); // => [0, 1, 2, 3]
-console.log(array); // => [0, 1, 2]
+import {
+    sort,
+    unshift,
+    push,
+    fill,
+    splice,
+    pop,
+    reverse,
+    copyWithin,
+    shift
+} from "@immutable-array/prototype";
+describe("prototype", () => {
+    it("shift", () => {
+        assert.deepStrictEqual(shift(["a", "b", "c", "d", "e"]), ["b", "c", "d", "e"]);
+    });
+    it("unshift", () => {
+        assert.deepStrictEqual(unshift(["a", "b", "c", "d", "e"], "x"), [
+            "x",
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+        ]);
+    });
+    it("pop", () => {
+        assert.deepStrictEqual(pop(["a", "b", "c", "d", "e"]), ["a", "b", "c", "d"]);
+    });
+    it("push", () => {
+        assert.deepStrictEqual(push(["a", "b", "c", "d", "e"], "x"), [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "x"
+        ]);
+    });
+    it("splice", () => {
+        assert.deepStrictEqual(splice(["a", "b", "c", "d", "e"], 0, 1, "x"), [
+            "x",
+            "b",
+            "c",
+            "d",
+            "e"
+        ]);
+    });
+    it("sort", () => {
+        assert.deepStrictEqual(sort(["e", "a", "c", "b", "d"]), ["a", "b", "c", "d", "e"]);
+    });
+    it("reverse", () => {
+        assert.deepStrictEqual(reverse(["a", "b", "c", "d", "e"]), ["e", "d", "c", "b", "a"]);
+    });
+    it("fill", () => {
+        assert.deepStrictEqual(fill(new Array(5), "x"), ["x", "x", "x", "x", "x"]);
+    });
+    it("copyWithin", () => {
+        assert.deepStrictEqual(copyWithin(["a", "b", "c", "d", "e"], 0, 3, 4), ["d", "b", "c", "d", "e"]);
+    });
+});
+
 ```
 
 ## Support Policy

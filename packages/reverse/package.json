@@ -14,6 +14,7 @@
   "version": "1.0.0",
   "description": "Immutable Array.prototype.reverse",
   "main": "lib/reverse.js",
+  "types": "lib/reverse.d.ts",
   "scripts": {
     "build": "cross-env NODE_ENV=production tsc -p .",
     "watch": "tsc -p . --watch",

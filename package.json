@@ -10,9 +10,10 @@
     "precommit": "lint-staged",
     "postcommit": "git reset",
     "prettier": "prettier \"packages/**/{src,test}/*.{ts,tsx}\" --write --print-width 100 --tab-width 4",
+    "bootstrap": "lerna bootstrap",
+    "prepare": "npm run bootstrap",
     "test": "jest",
-    "build": "lerna run build",
-    "prepublish": "npm run --if-present build"
+    "build": "lerna run build"
   },
   "lint-staged": {
     "**/*.{ts,tsx}": [
