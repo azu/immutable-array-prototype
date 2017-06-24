@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@immutable-array/prototype",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Collection of immutable Array.prototype methods.",
   "main": "lib/prototype.js",
   "types": "lib/prototype.d.ts",
@@ -46,7 +46,7 @@
     "@immutable-array/reverse": "^1.0.1",
     "@immutable-array/shift": "^1.0.1",
     "@immutable-array/sort": "^1.0.1",
-    "@immutable-array/splice": "^1.0.1",
+    "@immutable-array/splice": "^1.0.2",
     "@immutable-array/unshift": "^1.0.1"
   },
   "devDependencies": {
