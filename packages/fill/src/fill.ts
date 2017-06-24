@@ -7,7 +7,7 @@
  * @param end index to stop filling the array at. If end is negative, it is treated as
  * length+end.
  */
-export function fill<T>(array: Array<T>, value: T, start?: number, end?: number): Array<T> {
+export function fill<T>(array: Array<T>, value: T, start: number = 0, end: number = array.length): Array<T> {
     // Based on https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
 
     // Steps 1-2.
@@ -23,10 +23,10 @@ export function fill<T>(array: Array<T>, value: T, start?: number, end?: number)
     const relativeStart = start >> 0;
 
     // Step 8.
-    const k = relativeStart < 0 ? Math.max(len + relativeStart, 0) : Math.min(relativeStart, len);
+    let k = relativeStart < 0 ? Math.max(len + relativeStart, 0) : Math.min(relativeStart, len);
 
     // Steps 9-10.
-    const relativeEnd = end === undefined ? len : end >> 0;
+    const relativeEnd = end >> 0;
 
     // Step 11.
     const final = relativeEnd < 0 ? Math.max(len + relativeEnd, 0) : Math.min(relativeEnd, len);
