@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "benchmark",
+  "version": "1.0.0",
+  "description": "benchmark for @immutable-array",
+  "main": "benchamrk.js",
+  "scripts": {
+    "array": "node src/array.js > output/array.log",
+    "immutable-array": "node src/immutable-array.js > output/immutable-array.log",
+    "precompare": "mkdir -p output && npm run array && npm run immutable-array",
+    "compare": "nanobench-compare output/array.log output/immutable-array.log"
+  },
+  "keywords": [
+    "benchmark"
+  ],
+  "author": "azu",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@immutable-array/prototype": "^1.0.0",
+    "nanobench": "^2.1.0"
+  }
+}
