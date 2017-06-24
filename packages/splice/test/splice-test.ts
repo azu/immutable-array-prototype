@@ -94,5 +94,14 @@ describe("splice", () => {
             const resultArray = splice(originalArray, 0, 0, undefined);
             assert.deepStrictEqual(resultArray, [undefined, "a", "b", "c", "d", "e"]);
         });
+        it("should return array that insert element and delete element - total number is not changed", () => {
+            const originalArray = [0, 1, 2];
+            const resultArray = splice(originalArray, -1, 1, "x");
+            assert.deepStrictEqual(resultArray, [0, 1, "x"]);
+            assert.strictEqual(originalArray.length, resultArray.length);
+            // same with native
+            originalArray.splice(-1, 1, "x");
+            assert.deepStrictEqual(originalArray, resultArray);
+        });
     });
 });

@@ -171,6 +171,19 @@ See [benchmark](packages/benchmark).
 - Provide each method as an module
     - e.g.) `import push from "@immutable-array/push"`
     - All prototype method: `import { push } from "@immutable-array/prototype"`
+- ECMAScript compatible API
+
+For example, `@immutable-array/*` method should return same result with native API.
+
+```js
+import { splice } from "@immutable-array/splice";
+var array = [1, 2, 3];
+// immutable
+var resultArray = splice(array, -1, 1, "x");
+// native
+array.splice(-1, 1, "x");
+assert.deepStrictEqual(array, resultArray);
+```
 
 ### Do not
 

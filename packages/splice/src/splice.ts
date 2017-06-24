@@ -5,11 +5,9 @@
  * @param deleteCount The number of elements to remove.
  * @param items Elements to insert into the array in place of the deleted elements.
  */
-export function splice<T>(
-    array: Array<T>,
-    start: number = array.length,
-    deleteCount: number = array.length - start,
-    ...items: T[]
-): Array<T> {
-    return [...array.slice(0, start), ...items, ...array.slice(start + (deleteCount < 0 ? 0 : deleteCount))];
+export function splice<T>(array: Array<T>, start?: number, deleteCount?: number, ...items: T[]): Array<T>;
+export function splice<T>(array: Array<T>, ...args: any[]): Array<T> {
+    const copiedArray = Array.prototype.slice.call(array);
+    Array.prototype.splice.apply(copiedArray, args);
+    return copiedArray;
 }
