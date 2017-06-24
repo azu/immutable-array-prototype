@@ -128,35 +128,34 @@ See [benchmark](packages/benchmark).
     > node src/array.js |                  > immutable-array.js
                                       |
     # pop 200000 times               <<<   # pop 200000 times
-    ok ~219 ms (0 s + 219071853 ns)  <<<   ok ~296 ms (0 s + 295642472 ns)
+    ok ~243 ms (0 s + 242726054 ns)  <<<   ok ~288 ms (0 s + 287995642 ns)
                                       |
     # push 200000 times              <<<   # push 200000 times
-    ok ~37 ms (0 s + 36657200 ns)    <<<   ok ~136 ms (0 s + 136168374 ns)
+    ok ~43 ms (0 s + 42891286 ns)    <<<   ok ~151 ms (0 s + 151449835 ns)
                                       |
     # shift 200000 times             <<<   # shift 200000 times
-    ok ~218 ms (0 s + 218119977 ns)  <<<   ok ~267 ms (0 s + 266877015 ns)
+    ok ~229 ms (0 s + 228985933 ns)  <<<   ok ~278 ms (0 s + 278376069 ns)
                                       |
     # unshift 200000 times           <<<   # unshift 200000 times
-    ok ~43 ms (0 s + 42725823 ns)    <<<   ok ~96 ms (0 s + 96198980 ns)
+    ok ~51 ms (0 s + 50645359 ns)    <<<   ok ~110 ms (0 s + 109918035 ns)
                                       |
     # sort 2000 times                ===   # sort 2000 times
-    ok ~554 ms (0 s + 554139393 ns)  ===   ok ~566 ms (0 s + 566213053 ns)
+    ok ~563 ms (0 s + 562931038 ns)  ===   ok ~560 ms (0 s + 559704603 ns)
                                       |
     # reverse 200000 times           >>>   # reverse 200000 times
-    ok ~502 ms (0 s + 501891778 ns)  >>>   ok ~426 ms (0 s + 425654285 ns)
+    ok ~511 ms (0 s + 511468366 ns)  >>>   ok ~439 ms (0 s + 438853725 ns)
                                       |
-    # fill 200000 times              <<<   # fill 200000 times
-    ok ~693 ms (0 s + 692615788 ns)  <<<   ok ~1.26 s (1 s + 259820993 ns)
+    # fill 200000 times              >>>   # fill 200000 times
+    ok ~737 ms (0 s + 737258288 ns)  >>>   ok ~691 ms (0 s + 691079207 ns)
                                       |
     # splice 200000 times            <<<   # splice 200000 times
-    ok ~250 ms (0 s + 249596808 ns)  <<<   ok ~609 ms (0 s + 608638182 ns)
+    ok ~273 ms (0 s + 273138691 ns)  <<<   ok ~624 ms (0 s + 623533828 ns)
                                       |
     # copyWithin 200000 times        <<<   # copyWithin 200000 times
-    ok ~186 ms (0 s + 186430568 ns)  <<<   ok ~279 ms (0 s + 279108176 ns)
+    ok ~240 ms (0 s + 240226993 ns)  <<<   ok ~303 ms (0 s + 303090728 ns)
                                       |
     all benchmarks completed         <<<   all benchmarks completed
-    ok ~2.7 s (2 s + 701249188 ns)   <<<   ok ~3.93 s (3 s + 934321530 ns)
-                                      |
+    ok ~2.89 s (2 s + 890272008 ns)  <<<   ok ~3.44 s (3 s + 444001672 ns)
 
 ## Support Policy
 
