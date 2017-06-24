@@ -32,9 +32,13 @@ This library provide immutable version of each methods.
 
 ## Install
 
+`@immutable-array/prototype` includes all methods.
+
 Install with [npm](https://www.npmjs.com/):
 
     npm install @immutable-array/prototype
+
+If you want to a single method, you can use a method as a package.
 
 Per method packages:
 
@@ -48,7 +52,7 @@ Per method packages:
     npm install @immutable-array/splice
     npm install @immutable-array/copy-within
 
-See more details on each [package's README](./packages/).
+See each [package's README](./packages/) for more details.
 
 ## Usage
 
