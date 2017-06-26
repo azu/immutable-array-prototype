@@ -6,7 +6,7 @@ Immutable Array prototype methods.
 - Small and Thin
     - `@immutable-array/prototype` that includes all methods: 1.3 kB(gzip)
 - Per method packages
-    - `@immutable-array/push`, `@immutable-array/push` etc...
+    - `@immutable-array/push`, `@immutable-array/pop` etc...
 - Same usage with native `Array.prototype` methods
 
 ## Why?
