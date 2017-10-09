@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "benchmark",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "benchmark for @immutable-array",
   "main": "benchamrk.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "author": "azu",
   "license": "MIT",
   "devDependencies": {
-    "@immutable-array/prototype": "^1.0.2",
+    "@immutable-array/prototype": "^1.0.3",
     "nanobench": "^2.1.0"
   }
 }

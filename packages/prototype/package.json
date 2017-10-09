@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@immutable-array/prototype",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Collection of immutable Array.prototype methods.",
   "main": "lib/prototype.js",
   "types": "lib/prototype.d.ts",
@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/azu/immutable-array-prototype/tree/master/packages/prototype/",
   "dependencies": {
-    "@immutable-array/copy-within": "^1.0.1",
+    "@immutable-array/copy-within": "^1.0.3",
     "@immutable-array/fill": "^1.0.1",
     "@immutable-array/pop": "^1.0.1",
     "@immutable-array/push": "^1.0.1",
