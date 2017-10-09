@@ -1,17 +1,7 @@
 // MIT © 2017 azu
 "use strict";
 const bench = require("nanobench");
-const {
-    pop,
-    push,
-    shift,
-    unshift,
-    sort,
-    reverse,
-    fill,
-    splice,
-    copyWithin
-} = require("@immutable-array/prototype");
+const { pop, push, shift, unshift, sort, reverse, fill, splice, copyWithin } = require("@immutable-array/prototype");
 const { noop, createSmallArray, createBigArray } = require("./util");
 const executionCount = 200000;
 bench(`pop ${executionCount} times`, function(b) {
@@ -123,7 +113,3 @@ bench(`copyWithin ${executionCount} times`, function(b) {
     }
     b.end();
 });
-
-
-
-
