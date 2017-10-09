@@ -8,6 +8,6 @@
  * is treated as length+end.
  * @param end If not specified, length of the this object is used as its default value.
  */
-export function copyWithin<T>(array: Array<T>, target: number, start: number, end: number = array.length): Array<T> {
+export function copyWithin<T>(array: Array<T>, target: number, start: number, end?: number): Array<T> {
     return Array.prototype.slice.call(array).copyWithin(target, start, end);
 }

@@ -1017,5 +1017,5 @@ module.exports.createBigArray = () => {
         997,
         998,
         999
-    ]
+    ];
 };

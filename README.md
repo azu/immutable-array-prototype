@@ -62,66 +62,93 @@ Basically, the usage of these method is same with mutable version.
 
 ```js
 import {
-    sort,
-    unshift,
-    push,
-    fill,
-    splice,
-    pop,
-    reverse,
-    copyWithin,
-    shift
-} from "@immutable-array/prototype";
-describe("prototype", () => {
-    it("shift", () => {
-        assert.deepStrictEqual(shift(["a", "b", "c", "d", "e"]), ["b", "c", "d", "e"]);
-    });
-    it("unshift", () => {
-        assert.deepStrictEqual(unshift(["a", "b", "c", "d", "e"], "x"), [
-            "x",
-            "a",
-            "b",
-            "c",
-            "d",
-            "e"
-        ]);
-    });
-    it("pop", () => {
-        assert.deepStrictEqual(pop(["a", "b", "c", "d", "e"]), ["a", "b", "c", "d"]);
-    });
-    it("push", () => {
-        assert.deepStrictEqual(push(["a", "b", "c", "d", "e"], "x"), [
-            "a",
-            "b",
-            "c",
-            "d",
-            "e",
-            "x"
-        ]);
-    });
-    it("splice", () => {
-        assert.deepStrictEqual(splice(["a", "b", "c", "d", "e"], 0, 1, "x"), [
-            "x",
-            "b",
-            "c",
-            "d",
-            "e"
-        ]);
-    });
-    it("sort", () => {
-        assert.deepStrictEqual(sort(["e", "a", "c", "b", "d"]), ["a", "b", "c", "d", "e"]);
-    });
-    it("reverse", () => {
-        assert.deepStrictEqual(reverse(["a", "b", "c", "d", "e"]), ["e", "d", "c", "b", "a"]);
-    });
-    it("fill", () => {
-        assert.deepStrictEqual(fill(new Array(5), "x"), ["x", "x", "x", "x", "x"]);
-    });
-    it("copyWithin", () => {
-        assert.deepStrictEqual(copyWithin(["a", "b", "c", "d", "e"], 0, 3, 4), ["d", "b", "c", "d", "e"]);
-    });
+  sort,
+  unshift,
+  push,
+  fill,
+  splice,
+  pop,
+  reverse,
+  copyWithin,
+  shift
+} from '@immutable-array/prototype';
+describe('prototype', () => {
+  it('shift', () => {
+    assert.deepStrictEqual(shift(['a', 'b', 'c', 'd', 'e']), [
+      'b',
+      'c',
+      'd',
+      'e'
+    ]);
+  });
+  it('unshift', () => {
+    assert.deepStrictEqual(unshift(['a', 'b', 'c', 'd', 'e'], 'x'), [
+      'x',
+      'a',
+      'b',
+      'c',
+      'd',
+      'e'
+    ]);
+  });
+  it('pop', () => {
+    assert.deepStrictEqual(pop(['a', 'b', 'c', 'd', 'e']), [
+      'a',
+      'b',
+      'c',
+      'd'
+    ]);
+  });
+  it('push', () => {
+    assert.deepStrictEqual(push(['a', 'b', 'c', 'd', 'e'], 'x'), [
+      'a',
+      'b',
+      'c',
+      'd',
+      'e',
+      'x'
+    ]);
+  });
+  it('splice', () => {
+    assert.deepStrictEqual(splice(['a', 'b', 'c', 'd', 'e'], 0, 1, 'x'), [
+      'x',
+      'b',
+      'c',
+      'd',
+      'e'
+    ]);
+  });
+  it('sort', () => {
+    assert.deepStrictEqual(sort(['e', 'a', 'c', 'b', 'd']), [
+      'a',
+      'b',
+      'c',
+      'd',
+      'e'
+    ]);
+  });
+  it('reverse', () => {
+    assert.deepStrictEqual(reverse(['a', 'b', 'c', 'd', 'e']), [
+      'e',
+      'd',
+      'c',
+      'b',
+      'a'
+    ]);
+  });
+  it('fill', () => {
+    assert.deepStrictEqual(fill(new Array(5), 'x'), ['x', 'x', 'x', 'x', 'x']);
+  });
+  it('copyWithin', () => {
+    assert.deepStrictEqual(copyWithin(['a', 'b', 'c', 'd', 'e'], 0, 3, 4), [
+      'd',
+      'b',
+      'c',
+      'd',
+      'e'
+    ]);
+  });
 });
-
 ```
 
 ## Benchmarks
@@ -176,12 +203,12 @@ See [benchmark](packages/benchmark).
 For example, `@immutable-array/*` method should return same result with native API.
 
 ```js
-import { splice } from "@immutable-array/splice";
+import { splice } from '@immutable-array/splice';
 var array = [1, 2, 3];
 // immutable
-var resultArray = splice(array, -1, 1, "x");
+var resultArray = splice(array, -1, 1, 'x');
 // native
-array.splice(-1, 1, "x");
+array.splice(-1, 1, 'x');
 assert.deepStrictEqual(array, resultArray);
 ```
 
