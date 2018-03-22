@@ -8,7 +8,8 @@
     "array": "node src/array.js > output/array.log",
     "immutable-array": "node src/immutable-array.js > output/immutable-array.log",
     "precompare": "mkdir -p output && npm run array && npm run immutable-array",
-    "compare": "nanobench-compare output/array.log output/immutable-array.log"
+    "compare": "nanobench-compare output/array.log output/immutable-array.log",
+    "test": "jest"
   },
   "keywords": [
     "benchmark"
@@ -17,6 +18,9 @@
   "license": "MIT",
   "devDependencies": {
     "@immutable-array/prototype": "^1.0.3",
-    "nanobench": "^2.1.0"
+    "@types/jest": "^22.2.0",
+    "jest": "^22.4.3",
+    "nanobench": "^2.1.0",
+    "ts-jest": "^22.4.2"
   }
 }

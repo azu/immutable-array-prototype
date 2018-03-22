@@ -18,7 +18,8 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production tsc -p .",
     "watch": "tsc -p . --watch",
-    "prepublish": "npm run --if-present build"
+    "prepublish": "npm run --if-present build",
+    "test": "jest"
   },
   "publishConfig": {
     "access": "public"
@@ -50,8 +51,11 @@
     "@immutable-array/unshift": "^1.0.1"
   },
   "devDependencies": {
+    "@types/jest": "^22.2.0",
     "@types/node": "^8.0.2",
     "cross-env": "^5.0.1",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.2",
     "typescript": "^2.3.4"
   }
 }

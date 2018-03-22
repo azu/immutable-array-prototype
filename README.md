@@ -231,8 +231,10 @@ See [Releases page](https://github.com/azu/immutable-array-prototype/releases).
 
 ## Running tests
 
-Install devDependencies and Run `yarn test`:
+Run following commands:
 
+    yarn install
+    yarn bootstrap
     yarn test
 
 ## Contributing

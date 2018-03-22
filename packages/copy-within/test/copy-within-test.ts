@@ -5,18 +5,18 @@ import { copyWithin } from "../src/copy-within";
 describe("copyWithin", () => {
     it("should return immutable array", () => {
         const originalArray = ["a", "b", "c", "d", "e"];
-        const resultArray = copyWithin(originalArray, 1);
+        const resultArray = copyWithin(originalArray, 0, originalArray.length - 1);
         assert.ok(originalArray !== resultArray);
     });
 
     it("can copyWithin empty array", () => {
-        const originalArray = [];
-        assert.deepStrictEqual(originalArray.copyWithin(0), []);
+        const originalArray: any[] = [];
+        assert.deepStrictEqual(originalArray.copyWithin(0, 0), []);
     });
 
     it("should be idempotent - x() === x()", () => {
         const originalArray = ["a", "b", "c", "d", "e"];
-        assert.deepStrictEqual(originalArray.copyWithin(-2), originalArray.copyWithin(-2));
+        assert.deepStrictEqual(copyWithin(originalArray, -2, 1), copyWithin(originalArray, -2, 1));
     });
 
     it("should work copyWithin", () => {
