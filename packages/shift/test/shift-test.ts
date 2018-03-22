@@ -4,7 +4,7 @@ import * as assert from "assert";
 
 describe("shift", () => {
     it("should return empty array when shift empty array", () => {
-        const originalArray = [];
+        const originalArray: any[] = [];
         const resultArray = shift(originalArray);
         assert.deepStrictEqual(resultArray, []);
     });
