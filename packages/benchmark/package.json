@@ -8,7 +8,8 @@
     "array": "node src/array.js > output/array.log",
     "immutable-array": "node src/immutable-array.js > output/immutable-array.log",
     "precompare": "mkdir -p output && npm run array && npm run immutable-array",
-    "compare": "nanobench-compare output/array.log output/immutable-array.log"
+    "compare": "nanobench-compare output/array.log output/immutable-array.log",
+    "test": "jest"
   },
   "keywords": [
     "benchmark"

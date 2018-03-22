@@ -18,7 +18,8 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production tsc -p .",
     "watch": "tsc -p . --watch",
-    "prepublish": "npm run --if-present build"
+    "prepublish": "npm run --if-present build",
+    "test": "jest"
   },
   "publishConfig": {
     "access": "public"
