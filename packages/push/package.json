@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@immutable-array/push",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Immutable Array.prototype.push",
   "main": "lib/push.js",
   "types": "lib/push.d.ts",

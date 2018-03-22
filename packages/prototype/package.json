@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@immutable-array/prototype",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Collection of immutable Array.prototype methods.",
   "main": "lib/prototype.js",
   "types": "lib/prototype.d.ts",
@@ -40,15 +40,15 @@
   },
   "homepage": "https://github.com/azu/immutable-array-prototype/tree/master/packages/prototype/",
   "dependencies": {
-    "@immutable-array/copy-within": "^1.0.3",
-    "@immutable-array/fill": "^1.0.1",
-    "@immutable-array/pop": "^1.0.1",
-    "@immutable-array/push": "^1.0.1",
-    "@immutable-array/reverse": "^1.0.1",
-    "@immutable-array/shift": "^1.0.1",
-    "@immutable-array/sort": "^1.0.1",
-    "@immutable-array/splice": "^1.0.2",
-    "@immutable-array/unshift": "^1.0.1"
+    "@immutable-array/copy-within": "^1.0.4",
+    "@immutable-array/fill": "^1.0.4",
+    "@immutable-array/pop": "^1.0.4",
+    "@immutable-array/push": "^1.0.4",
+    "@immutable-array/reverse": "^1.0.4",
+    "@immutable-array/shift": "^1.0.4",
+    "@immutable-array/sort": "^1.0.4",
+    "@immutable-array/splice": "^1.0.4",
+    "@immutable-array/unshift": "^1.0.4"
   },
   "devDependencies": {
     "@types/jest": "^22.2.0",
