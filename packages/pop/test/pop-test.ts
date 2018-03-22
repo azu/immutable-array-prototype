@@ -4,7 +4,7 @@ import { pop } from "../src/pop";
 
 describe("pop", () => {
     it("should return empty array when pop empty array", () => {
-        const originalArray = [];
+        const originalArray: any[] = [];
         const resultArray = pop(originalArray);
         assert.deepStrictEqual(resultArray, []);
     });
