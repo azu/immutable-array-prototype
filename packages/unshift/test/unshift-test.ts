@@ -4,7 +4,7 @@ import * as assert from "assert";
 
 describe("unshift", () => {
     it("can unshift element to empty array", () => {
-        const originalArray = [];
+        const originalArray: string[] = [];
         const resultArray = unshift(originalArray, "a");
         assert.deepStrictEqual(resultArray, ["a"]);
     });
@@ -17,15 +17,15 @@ describe("unshift", () => {
     it("can unshift an array", () => {
         const originalArray = ["a", "b", "c", "d", "e"];
         const shiftingArray = ["f", "g"];
-        const resultArray = unshift(originalArray, shiftingArray);
+        const resultArray = unshift<any>(originalArray, shiftingArray);
         assert.deepStrictEqual(resultArray, [["f", "g"], "a", "b", "c", "d", "e"]);
     });
     it("should be idempotent - x() === x()", () => {
-        const originalArray = ["a", "b", "c", "d", "e"];
+        const originalArray: any[] = ["a", "b", "c", "d", "e"];
         assert.deepStrictEqual(unshift(originalArray, 1), unshift(originalArray, 1));
     });
     it("should return empty array when adding empty element to empty array", () => {
-        const originalArray = [];
+        const originalArray: any[] = [];
         const resultArray = unshift(originalArray);
         assert.strictEqual(resultArray.length, 0);
     });
