@@ -1,4 +1,4 @@
-# immutable-array-prototype
+# immutable-array-prototype [![Build Status](https://travis-ci.org/azu/immutable-array-prototype.svg?branch=master)](https://travis-ci.org/azu/immutable-array-prototype)
 
 Immutable Array prototype methods.
 
