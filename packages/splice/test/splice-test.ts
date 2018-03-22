@@ -102,11 +102,11 @@ describe("splice", () => {
             // https://github.com/georapbox/immutable-arrays
             // For example, `indexOf` return -1 and use is as arguments, then occur this issue.
             const originalArray = [0, 1, 2];
-            const resultArray = splice(originalArray, -1, 1, "x");
+            const resultArray = splice<any>(originalArray, -1, 1, "x");
             assert.deepStrictEqual(resultArray, [0, 1, "x"]);
             assert.strictEqual(originalArray.length, resultArray.length);
             // same with native
-            originalArray.splice(-1, 1, "x");
+            originalArray.splice(-1, 1, "x" as any);
             assert.deepStrictEqual(originalArray, resultArray);
         });
     });
