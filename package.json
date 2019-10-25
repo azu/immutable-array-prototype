@@ -7,8 +7,6 @@
   "description": "Immutable Array prototype methods.",
   "main": "lib/immutable-array-prototype.js",
   "scripts": {
-    "precommit": "lint-staged",
-    "postcommit": "git reset",
     "prettier": "prettier \"packages/**/{src,test}/*.{js,ts,tsx}\"",
     "publish": "lerna publish --conventional-commits --concurrency 1",
     "publish:beta": "lerna publish --npm-tag=beta --conventional-commits --concurrency 1",
@@ -58,5 +56,11 @@
     "prettier": "^1.18.2",
     "ts-jest": "^24.1.0",
     "typescript": "^3.6.4"
+  },
+  "husky": {
+    "hooks": {
+      "post-commit": "git reset",
+      "pre-commit": "lint-staged"
+    }
   }
 }
