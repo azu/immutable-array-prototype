@@ -4,7 +4,7 @@ Immutable Array prototype methods.
 
 - TypeScript
 - Small and Thin
-    - `@immutable-array/prototype` that includes all methods: ~500kb(gzip)
+    - `@immutable-array/prototype` that includes all methods: ~500kb(gzip+minify)
 - Per method packages
     - `@immutable-array/push`, `@immutable-array/pop` etc...
 - Same usage with native `Array.prototype` methods
