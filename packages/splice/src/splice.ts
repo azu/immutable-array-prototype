@@ -8,6 +8,7 @@
 export function splice<T>(array: Array<T>, start?: number, deleteCount?: number, ...items: T[]): Array<T>;
 export function splice<T>(array: Array<T>, ...args: any[]): Array<T> {
     const copiedArray = Array.prototype.slice.call(array);
+    // @ts-ignore
     Array.prototype.splice.apply(copiedArray, args);
     return copiedArray;
 }

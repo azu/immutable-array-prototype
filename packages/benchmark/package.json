@@ -18,9 +18,9 @@
   "license": "MIT",
   "devDependencies": {
     "@immutable-array/prototype": "^1.0.4",
-    "@types/jest": "^22.2.0",
-    "jest": "^22.4.3",
+    "@types/jest": "^24.0.19",
+    "jest": "^24.9.0",
     "nanobench": "^2.1.0",
-    "ts-jest": "^22.4.2"
+    "ts-jest": "^24.1.0"
   }
 }

@@ -22,7 +22,7 @@ describe("push", () => {
     });
     it("should be idempotent - x() === x()", () => {
         const originalArray = ["a", "b", "c", "d", "e"];
-        assert.deepStrictEqual(push<string | number>(originalArray, 1), push(originalArray, 1));
+        assert.deepStrictEqual(push<string | number>(originalArray, 1), push<string | number>(originalArray, 1));
     });
     it("should return empty array when adding empty element to empty array", () => {
         const originalArray: any[] = [];
