@@ -1,4 +1,4 @@
-# immutable-array-prototype [![Build Status](https://travis-ci.org/azu/immutable-array-prototype.svg?branch=master)](https://travis-ci.org/azu/immutable-array-prototype)
+# immutable-array-prototype [![Actions Status: test](https://github.com/azu/immutable-array-prototype/workflows/test/badge.svg)](https://github.com/azu/immutable-array-prototype/actions?query=workflow%3A"test")
 
 Immutable Array prototype methods.
 
