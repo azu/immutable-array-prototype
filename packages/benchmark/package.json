@@ -1,26 +1,26 @@
 {
-  "private": true,
-  "name": "benchmark",
-  "version": "1.0.5",
-  "description": "benchmark for @immutable-array",
-  "main": "benchamrk.js",
-  "scripts": {
-    "array": "node src/array.js > output/array.log",
-    "immutable-array": "node src/immutable-array.js > output/immutable-array.log",
-    "precompare": "mkdir -p output && npm run array && npm run immutable-array",
-    "compare": "nanobench-compare output/array.log output/immutable-array.log",
-    "test": "jest"
-  },
-  "keywords": [
-    "benchmark"
-  ],
-  "author": "azu",
-  "license": "MIT",
-  "devDependencies": {
-    "@immutable-array/prototype": "^1.0.5",
-    "@types/jest": "^29.2.5",
-    "jest": "^29.3.1",
-    "nanobench": "^3.0.0",
-    "ts-jest": "^29.0.3"
-  }
+    "private": true,
+    "name": "benchmark",
+    "version": "1.0.6",
+    "description": "benchmark for @immutable-array",
+    "main": "benchamrk.js",
+    "scripts": {
+        "array": "node src/array.js > output/array.log",
+        "immutable-array": "node src/immutable-array.js > output/immutable-array.log",
+        "precompare": "mkdir -p output && npm run array && npm run immutable-array",
+        "compare": "nanobench-compare output/array.log output/immutable-array.log",
+        "test": "jest"
+    },
+    "keywords": [
+        "benchmark"
+    ],
+    "author": "azu",
+    "license": "MIT",
+    "devDependencies": {
+        "@immutable-array/prototype": "^1.0.6",
+        "@types/jest": "^29.2.5",
+        "jest": "^29.3.1",
+        "nanobench": "^3.0.0",
+        "ts-jest": "^29.0.3"
+    }
 }

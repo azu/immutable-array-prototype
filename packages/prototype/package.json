@@ -1,60 +1,60 @@
 {
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
-  "author": "azu",
-  "license": "MIT",
-  "files": [
-    "bin/",
-    "lib/",
-    "src/"
-  ],
-  "name": "@immutable-array/prototype",
-  "version": "1.0.5",
-  "description": "Collection of immutable Array.prototype methods.",
-  "main": "lib/prototype.js",
-  "types": "lib/prototype.d.ts",
-  "scripts": {
-    "build": "tsc -p .",
-    "watch": "tsc -p . --watch",
-    "prepublish": "npm run --if-present build",
-    "test": "jest"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "keywords": [
-    "array",
-    "immutable",
-    "collection",
-    "util",
-    "structure"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/azu/immutable-array-prototype.git"
-  },
-  "bugs": {
-    "url": "https://github.com/azu/immutable-array-prototype/issues"
-  },
-  "homepage": "https://github.com/azu/immutable-array-prototype/tree/master/packages/prototype/",
-  "dependencies": {
-    "@immutable-array/copy-within": "^1.0.5",
-    "@immutable-array/fill": "^1.0.5",
-    "@immutable-array/pop": "^1.0.5",
-    "@immutable-array/push": "^1.0.5",
-    "@immutable-array/reverse": "^1.0.5",
-    "@immutable-array/shift": "^1.0.5",
-    "@immutable-array/sort": "^1.0.5",
-    "@immutable-array/splice": "^1.0.5",
-    "@immutable-array/unshift": "^1.0.5"
-  },
-  "devDependencies": {
-    "@types/jest": "^29.2.5",
-    "@types/node": "^18.11.18",
-    "jest": "^29.3.1",
-    "ts-jest": "^29.0.3",
-    "typescript": "^4.9.4"
-  }
+    "directories": {
+        "lib": "lib",
+        "test": "test"
+    },
+    "author": "azu",
+    "license": "MIT",
+    "files": [
+        "bin/",
+        "lib/",
+        "src/"
+    ],
+    "name": "@immutable-array/prototype",
+    "version": "1.0.6",
+    "description": "Collection of immutable Array.prototype methods.",
+    "main": "lib/prototype.js",
+    "types": "lib/prototype.d.ts",
+    "scripts": {
+        "build": "tsc -p .",
+        "watch": "tsc -p . --watch",
+        "prepublish": "npm run --if-present build",
+        "test": "jest"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": [
+        "array",
+        "immutable",
+        "collection",
+        "util",
+        "structure"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/azu/immutable-array-prototype.git"
+    },
+    "bugs": {
+        "url": "https://github.com/azu/immutable-array-prototype/issues"
+    },
+    "homepage": "https://github.com/azu/immutable-array-prototype/tree/master/packages/prototype/",
+    "dependencies": {
+        "@immutable-array/copy-within": "^1.0.6",
+        "@immutable-array/fill": "^1.0.6",
+        "@immutable-array/pop": "^1.0.6",
+        "@immutable-array/push": "^1.0.6",
+        "@immutable-array/reverse": "^1.0.6",
+        "@immutable-array/shift": "^1.0.6",
+        "@immutable-array/sort": "^1.0.6",
+        "@immutable-array/splice": "^1.0.6",
+        "@immutable-array/unshift": "^1.0.6"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.2.5",
+        "@types/node": "^18.11.18",
+        "jest": "^29.3.1",
+        "ts-jest": "^29.0.3",
+        "typescript": "^4.9.4"
+    }
 }
