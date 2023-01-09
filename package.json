@@ -7,20 +7,20 @@
   "description": "Immutable Array prototype methods.",
   "main": "lib/immutable-array-prototype.js",
   "scripts": {
-    "prettier": "prettier \"packages/**/{src,test}/*.{js,ts,tsx}\"",
     "publish": "lerna publish --conventional-commits --concurrency 1",
     "publish:beta": "lerna publish --npm-tag=beta --conventional-commits --concurrency 1",
     "bootstrap": "lerna bootstrap",
     "test": "yarn run build && jest",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
+    "prepare": "git config --local core.hooksPath .githooks"
   },
   "workspaces": [
     "packages/*"
   ],
   "lint-staged": {
-    "**/*.{ts,tsx}": [
-      "prettier --write",
-      "git add"
+    "*.{js,jsx,ts,tsx,css}": [
+      "prettier --write"
     ]
   },
   "jest": {
@@ -46,21 +46,25 @@
   },
   "homepage": "https://github.com/azu/immutable-array-prototype",
   "devDependencies": {
-    "@types/jest": "^24.0.19",
-    "@types/node": "^12.11.7",
-    "cross-env": "^6.0.3",
-    "husky": "^3.0.9",
-    "jest": "^24.9.0",
-    "lerna": "^3.18.3",
-    "lint-staged": "^9.4.2",
-    "prettier": "^1.18.2",
-    "ts-jest": "^24.1.0",
-    "typescript": "^3.6.4"
+    "@types/jest": "^29.2.5",
+    "@types/node": "^18.11.18",
+    "jest": "^29.3.1",
+    "lerna": "^6.4.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.2",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.9.4"
   },
   "husky": {
     "hooks": {
       "post-commit": "git reset",
       "pre-commit": "lint-staged"
     }
+  },
+  "prettier": {
+    "singleQuote": false,
+    "printWidth": 120,
+    "tabWidth": 4,
+    "trailingComma": "none"
   }
 }
