@@ -7,13 +7,16 @@
   "description": "Immutable Array prototype methods.",
   "main": "lib/immutable-array-prototype.js",
   "scripts": {
-    "publish": "lerna publish --conventional-commits --concurrency 1",
-    "publish:beta": "lerna publish --npm-tag=beta --conventional-commits --concurrency 1",
-    "bootstrap": "lerna bootstrap",
     "test": "yarn run build && jest",
     "build": "lerna run build",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
-    "prepare": "git config --local core.hooksPath .githooks"
+    "prepare": "git config --local core.hooksPath .githooks",
+    "versionup": "lerna version --no-push --no-git-tag-version",
+    "versionup:patch": "lerna version patch --no-push --no-git-tag-version",
+    "versionup:minor": "lerna version minor --no-push --no-git-tag-version",
+    "versionup:major": "lerna version major --no-push --no-git-tag-version",
+    "release": "lerna publish from-package",
+    "release-ci": "lerna publish from-package --yes"
   },
   "workspaces": [
     "packages/*"
@@ -54,12 +57,6 @@
     "prettier": "^2.8.2",
     "ts-jest": "^29.0.3",
     "typescript": "^4.9.4"
-  },
-  "husky": {
-    "hooks": {
-      "post-commit": "git reset",
-      "pre-commit": "lint-staged"
-    }
   },
   "prettier": {
     "singleQuote": false,
