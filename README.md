@@ -234,7 +234,6 @@ See [Releases page](https://github.com/azu/immutable-array-prototype/releases).
 Run following commands:
 
     yarn install
-    yarn bootstrap
     yarn test
 
 ## Contributing
