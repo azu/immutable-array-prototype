@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@immutable-array/copy-within",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Immutable Array.prototype.copyWithin().",
   "main": "lib/copy-within.js",
   "types": "lib/copy-within.d.ts",

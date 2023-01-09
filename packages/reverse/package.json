@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@immutable-array/reverse",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Immutable Array.prototype.reverse",
   "main": "lib/reverse.js",
   "types": "lib/reverse.d.ts",
